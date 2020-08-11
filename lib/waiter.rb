@@ -25,9 +25,11 @@ Meal.all.select {|meal| meal.waiter == self}
 end
 
 def best_tipper
-  n = 0
-Meal.all.each do |meal|
-  n = meal.tip if meal.tip > n
+  best_tipped_meal = meals.max do |meal_a, meal_b|
+    meal_a.tip <=> meal_b.tip
+  end
+
+  best_tipped_meal.customer
 end
 
 end
