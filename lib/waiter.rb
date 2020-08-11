@@ -2,7 +2,7 @@ class Waiter
   attr_accessor :name, :years
   @@all = []
 
-def initialize
+def initialize(arg1, arg2)
 @name = name
 @years = years
 save
