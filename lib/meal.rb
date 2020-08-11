@@ -8,6 +8,7 @@ def initialize
 @customer = customer
 @total = total
 @tip = tip
+save
 end
 
 def save
