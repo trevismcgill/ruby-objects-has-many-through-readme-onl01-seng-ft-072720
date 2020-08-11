@@ -3,7 +3,7 @@ class Meal
 
   @@all = []
 
-def initialize(arg1, arg2)
+def initialize(arg1, arg2, arg3, arg4)
 @waiter = waiter
 @customer = customer
 @total = total
