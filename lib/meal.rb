@@ -9,4 +9,9 @@ def initialize
 @total = total
 @tip = tip
 end
+
+def self.all
+@@all
+end
+
 end
