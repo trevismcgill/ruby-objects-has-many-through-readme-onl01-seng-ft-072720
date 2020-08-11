@@ -10,6 +10,9 @@ def initialize
 @tip = tip
 end
 
+def save
+@all << self
+
 def self.all
 @@all
 end
