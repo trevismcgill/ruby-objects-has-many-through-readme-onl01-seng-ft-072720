@@ -26,9 +26,9 @@ end
 
 def best_tipper
   n = 0
-Meal.all.each do |meal| 
+Meal.all.each do |meal|
   n = meal.tip if meal.tip > n
-  
+
 end
 
 end
