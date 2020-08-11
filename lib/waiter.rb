@@ -25,7 +25,8 @@ Meal.all.select {|meal| meal.waiter == self}
 end
 
 def best_tipper
-
+  n = 0
+Meal.all.each {|meal| meal.tip = n if tip > n }
 end
 
 end
