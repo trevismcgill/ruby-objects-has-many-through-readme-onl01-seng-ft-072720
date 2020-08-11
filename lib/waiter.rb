@@ -5,6 +5,7 @@ class Waiter
 def initialize
 @name = name
 @years = years
+save
 end
 
 def save
