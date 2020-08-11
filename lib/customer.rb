@@ -22,11 +22,11 @@ end
 
 def meals
 Meal.all.select {|meal| meal.customer == self}
-binding.pry
+# binding.pry
 end
 
 def waiters
-meals.select {|meal| meal.customer}
+meals.collect {|meal| meal.customer}
 end
 
 end
