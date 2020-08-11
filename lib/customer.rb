@@ -18,7 +18,6 @@ end
 
 def new_meal(customer, waiter, total)
   Meal.new(waiter, customer, total)
-
 end
 
 def meals
